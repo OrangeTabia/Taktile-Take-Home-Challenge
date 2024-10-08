@@ -10,8 +10,8 @@ TAKTILE_URL = "https://eu-central-1.taktile-org.decide.taktile.com"
 
 CODE_NODE_MAP = {
   # File Name -> [flow_id, node_id]
-  "Multiply.py": ["flow_id_1", "code_node_id_1"], 
-  "Summarize.py": ["flow_id_2", "code_node_id_2"], 
+  "nodes/Multiply.py": ["flow_id_1", "code_node_id_1"], 
+  "nodes/Summarize.py": ["flow_id_2", "code_node_id_2"], 
 }
 
 # Fetch the file name passed as argument

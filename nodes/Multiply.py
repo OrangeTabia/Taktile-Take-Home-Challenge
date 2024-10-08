@@ -1,5 +1,5 @@
 def multiply(data):
-    """Function that summarized cols a and b"""
+    """Function that summarized cols a & b"""
 
     data["sum"] = data["a"] * data["b"]
 
