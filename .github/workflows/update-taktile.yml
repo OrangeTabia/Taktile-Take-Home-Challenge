@@ -34,6 +34,8 @@ jobs:
           python -m pip install requests
 
       - name: Push code on edited nodes
+        env:
+          TAKTILE_API_KEY: ${{ secrets.TAKTILE_API_KEY }}  # Use GitHub Secrets for API key
         run: |
           for file in $(git diff --name-only HEAD~1 HEAD); do
             if [[ "$file" == *.py ]]; then
