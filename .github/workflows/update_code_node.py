@@ -10,9 +10,9 @@ def update_taketile_code_node(node_id, code_content):
   data = {
     "flow_id": "c179117d-a4ce-4635-a268-b37d13668515", 
     "node_id": , 
-    "src_code": 
+    "src_code" : 
   }
-  response = requests.post(url, headers=headers, json=data)
+  response = requests.put(url, headers=headers, json=data)
   if response.status_code == 200:
     print(f"Succesfully updated Code Node {node_id}")
   else: 
