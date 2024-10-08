@@ -4,11 +4,12 @@ import requests
 def update_taketile_code_node(node_id, code_content): 
   url = f"https://eu-central-1.taktile-org.decide.taktile.com/run/api/v1/flows/patch-decision-graph/sandbox/decide"
   headers = {
+    "X-Api-Key": "c179117d-a4ce-4635-a268-b37d13668515",
     "accept": "application/json",
     "Content-Type": "application/json"
   }
   data = {
-    "flow_id": "c179117d-a4ce-4635-a268-b37d13668515", 
+    "flow_id": , 
     "node_id": , 
     "src_code" : 
   }
