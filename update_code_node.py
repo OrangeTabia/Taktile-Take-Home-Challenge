@@ -6,9 +6,9 @@ import os
 import sys
 
 # For local dev
-from dotenv import load_dotenv 
-# loading variables from .env file
-load_dotenv() 
+# from dotenv import load_dotenv 
+# # loading variables from .env file
+# load_dotenv() 
 
 # API key comes from environment variables added in GitHub Actions
 TAKTILE_API_KEY = os.getenv("TAKTILE_API_KEY")
