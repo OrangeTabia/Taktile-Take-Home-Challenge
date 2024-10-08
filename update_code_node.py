@@ -61,7 +61,7 @@ class NodeUpdater:
       # Only return the flow ids
       return [flow["flow_id"] for flow in response_json["data"]["flows"]]
     else: 
-      print(f"Failed to retrieve flow_id. Error: {response.text}")
+      raise Exception(f"Failed to retrieve flow_id. Error: {response.text}")
 
 
   # Method to get the graph by accessing all nodes from decision graph 
@@ -91,7 +91,7 @@ class NodeUpdater:
       print(f"{response_json['data']['message']}")
       return response_json["data"]["graph"]
     else: 
-      print(f"Failed to retrieve the graph from {flow_id}. Error: {response.text}")
+      raise Exception(f"Failed to retrieve the graph from {flow_id}. Error: {response.text}")
 
 
   # Method to patch code changes in a specific node
@@ -123,7 +123,7 @@ class NodeUpdater:
     if response.status_code == 200:
       print(f"Success! \n {response.json()['data']['message']} {node_id}")
     else: 
-      print(f"Failed to update Code Node {node_id}. Error: {response.text}")
+      raise Exception(f"Failed to update Code Node {node_id}. Error: {response.text}")
 
 
   # A simple running method for us to execute all of the logic
