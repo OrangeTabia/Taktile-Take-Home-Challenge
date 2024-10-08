@@ -33,7 +33,9 @@ jobs:
         run: |
           python -m pip install requests
 
-      - name: Fetch updated code files
+      - name: Push code on edited nodes
+        env:
+          TAKTILE_API_KEY: ${{ secrets.TAKTILE_API_KEY }}  # Use GitHub Secrets for API key
         run: |
           for file in $(git diff --name-only HEAD~1 HEAD); do
             if [[ "$file" == *.py ]]; then
@@ -41,7 +43,3 @@ jobs:
               python update_code_node.py $file
             fi
           done
-
-      - name: Update Taktile Code Nodes
-        run: |
-          python update_code_node.py
