@@ -33,7 +33,7 @@ jobs:
       # Install requests to make API calls
       - name: Install required dependencies
         run: |
-          python -m pip install requests
+          python -m pip install requests dotenv
 
       - name: Push code on edited nodes
         env:
