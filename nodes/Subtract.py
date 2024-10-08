@@ -1,5 +1,5 @@
 def subtract(data):
-    """Function that summarized cols a & b"""
+    """Function that summarized cols a and b"""
 
     data["difference"] = data["a"] - data["b"]
 

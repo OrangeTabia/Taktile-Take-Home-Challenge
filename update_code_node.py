@@ -12,6 +12,7 @@ CODE_NODE_MAP = {
   # File Name -> [flow_id, node_id]
   "nodes/Multiply.py": ["flow_id_1", "code_node_id_1"], 
   "nodes/Summarize.py": ["flow_id_2", "code_node_id_2"], 
+  "nodes/Subtract.py": ["flow_id_3", "code_node_id_3"]
 }
 
 # Fetch the file name passed as argument
