@@ -126,7 +126,7 @@ class NodeUpdater:
       raise Exception(f"Failed to update Code Node {node_id}. Error: {response.text}")
 
 
-  # A simple running method for us to execute all of the logic
+  # A simple running method to execute all of the logic
   def run(self): 
     # This represents the flow-node pairs that need to have a node updated by the new code change
     matching_node_pairs = []
