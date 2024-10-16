@@ -22,7 +22,7 @@ class NodeUpdater:
       "Content-Type": "application/json"
     }
     # Fetch the file name passed as argument
-    # TODO: Consider addibg the org_name as an arg so we can extend this past NB36
+    # TODO: Consider adding the org_name as an arg so we can extend this past NB36
     self.file_path = file_path
     # Only use the name of the file (remove the file extension and the location of the file)
     self.file_name = file_path.split('/')[-1].split('.py')[0]
