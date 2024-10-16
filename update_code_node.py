@@ -2,7 +2,7 @@
 import requests
 # To work with the environment variables
 import os
-# To work with the files
+# To work with the files (Code Nodes)
 import sys
 
 # Uncomment for local env
@@ -98,6 +98,7 @@ class NodeUpdater:
   def update_code_node(self, flow_id, node_id, code_content): 
     """
     Updates the node code contents.
+    The endpoint will allow you to patch the Decision Flow graph to change the Code Node’s code.
     NOTE: Does not do any validation to see if there are meaningful differences in the contents. 
     This is because we assume that there's a diffed file that's passed in
     """
