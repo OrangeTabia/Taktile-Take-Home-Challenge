@@ -5,7 +5,7 @@ import os
 # To work with the files
 import sys
 
-# Uncomment for local dev
+# Uncomment for local env
 # from dotenv import load_dotenv 
 # # loading variables from .env file
 # load_dotenv() 
