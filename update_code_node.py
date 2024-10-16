@@ -122,7 +122,7 @@ class NodeUpdater:
     }
     response = requests.post(url, headers=headers, json=body)
     if response.status_code == 200:
-      print(f"Success! \n {response.json()['data']['message']} {node_id}")
+      print(f"{response.json()['data']['message']} {node_id}")
     else: 
       raise Exception(f"Failed to update Code Node {node_id}. Error: {response.text}")
 
